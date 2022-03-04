@@ -10,8 +10,9 @@ body {
   height: 100vh;
 
   .stage-container {
-    width: calc(min(100vh, 100vw) - 150px);
-    height: calc(min(100vh, 100vw) - 150px);
+    margin-top: 20px;
+    width: calc(min(100vh, 100vw) - 250px);
+    height: calc(min(100vh, 100vw) - 250px);
     min-width: 400px;
     min-height: 400px;
     box-sizing: border-box;
