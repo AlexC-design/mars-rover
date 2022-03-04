@@ -1,0 +1,51 @@
+.ui-container {
+  .command-list {
+    height: 45px;
+    width: 100%;
+    border: solid 1px #608997;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      margin: 5px;
+    }
+  }
+
+  .instructions-container {
+    position: relative;
+    .instructions {
+      width: 100%;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      width: 20%;
+      height: 50%;
+      cursor: pointer;
+      background-color: #373b3b;
+      border: solid 2px #d3f2fc;
+      border-radius: 10px;
+      color: #d3f2fc;
+      font-size: 20px;
+
+      &:hover {
+        background-color: #1d1f1f;
+      }
+      &:active {
+        background-color: #585f5f;
+      }
+      &:disabled {
+        opacity: 0.5;
+        cursor: default;
+        pointer-events: none;
+      }
+
+      transform: translateY(-50%);
+    }
+  }
+}

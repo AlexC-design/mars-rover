@@ -1,0 +1,20 @@
+body {
+  background-color: #373b3b;
+  color: #8fb0bb;
+}
+
+.main-screen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+
+  .stage-container {
+    width: calc(min(100vh, 100vw) - 150px);
+    height: calc(min(100vh, 100vw) - 150px);
+    min-width: 400px;
+    min-height: 400px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}

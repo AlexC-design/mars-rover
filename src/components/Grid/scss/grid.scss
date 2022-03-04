@@ -1,0 +1,19 @@
+.grid-container {
+  width: 100%;
+  height: 100%;
+  .row {
+    height: 10%;
+    display: flex;
+  }
+  .tile {
+    width: 10%;
+    height: 100%;
+    border: solid 1px #608997;
+    box-sizing: border-box;
+    background-color: #485255;
+
+    &.active {
+      // background-color: #647377;
+    }
+  }
+}

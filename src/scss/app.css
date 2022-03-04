@@ -1,0 +1,28 @@
+body {
+  background-color: #373b3b;
+  color: #8fb0bb;
+}
+
+.main-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100vh;
+}
+
+.main-screen .stage-container {
+  width: calc(min(100vh, 100vw) - 150px);
+  height: calc(min(100vh, 100vw) - 150px);
+  min-width: 400px;
+  min-height: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+/*# sourceMappingURL=app.css.map */

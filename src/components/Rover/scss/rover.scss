@@ -1,0 +1,70 @@
+.rover-container {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  opacity: 1;
+  transition: all 0.4s linear;
+
+
+  .rover-parts {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s linear;
+
+    .wheels {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      
+      &.moving {
+        animation: move-wheels 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+
+      }
+    }
+    .body {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .camera {
+      height: 40%;
+      position: absolute;
+      top: 0;
+      left: 40%;
+      z-index: 3;
+
+      animation: rotate-camera 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+  }
+}
+
+// ----------------- ANIMATIONS -----------------
+
+@keyframes move-wheels {
+  0% {
+    transform: translateY(1%);
+  }
+  50% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
+
+@keyframes rotate-camera {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
